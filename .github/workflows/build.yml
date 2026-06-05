@@ -20,6 +20,9 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
 
+      - name: Vygenerování Gradle Wrapperu (Tady se to vytvoří!)
+        run: gradle wrapper
+
       - name: Povolení práv pro Gradle
         run: chmod +x ./gradlew
 
