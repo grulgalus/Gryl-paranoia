@@ -20,14 +20,13 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
 
-      - name: Vygenerování Gradle Wrapperu (Tady se to vytvoří!)
-        run: gradle wrapper --gradle-version 8.8
-
-      - name: Povolení práv pro Gradle
-        run: chmod +x ./gradlew
+      - name: Nastavení Gradle
+        uses: gradle/actions/setup-gradle@v3
+        with:
+          gradle-version: '8.8'
 
       - name: Kompilace módu (Build)
-        run: ./gradlew build
+        run: gradle build
 
       - name: Nahrání hotového .jar souboru
         uses: actions/upload-artifact@v4
