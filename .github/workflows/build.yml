@@ -21,7 +21,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Vygenerování Gradle Wrapperu (Tady se to vytvoří!)
-        run: gradle wrapper
+        run: gradle wrapper --gradle-version 8.8
 
       - name: Povolení práv pro Gradle
         run: chmod +x ./gradlew
