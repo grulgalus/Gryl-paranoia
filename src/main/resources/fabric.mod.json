@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "id": "gryl-paranoia",
+  "id": "grylparanoia",
   "version": "1.0.0",
   "name": "Gryl: Paranoia",
-  "description": "Psychological terror",
+  "description": "Something is behind you...",
   "authors": [
-    "Gryldicek"
+    "gryll"
   ],
   "contact": {},
   "license": "MIT",
@@ -17,8 +17,9 @@
   },
   "depends": {
     "fabricloader": ">=0.15.0",
-    "minecraft": "~1.21.5",
+    "minecraft": "~1.21.0",
     "java": ">=21",
-    "gryl-api": "*" 
+    "fabric-api": "*",
+    "grylapi": ">=1.0.0"
   }
 }
